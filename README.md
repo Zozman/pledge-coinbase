@@ -81,4 +81,10 @@ coinbaseKey contains the API key from the Coinbase Account that is receiving the
 ### coinbaseSecret; Type: String (Required) Default: null
 coinbaseSecret contains the API Secret from the Coinbase Account that is receiving the donations.  An API Secret can be generated [here](https://coinbase.com/account/api), and only needs "Buttons" access.<br />  ****NOTE!  Giving API access other than "Buttons" access is dangerous and not recommended and should be avoided at ALL COSTS.  Giving other access to more powerful API features could give others access to your Coinbase wallet.  BE SMART ABOUT YOUR API ACCESS!****
 ### embedlyKey; Type: String (Required) Default: null
-embedlyKey contains the API key from the Embed.ly.  An API Key can be generated [here](https://app.embed.ly).
+embedlyKey contains the API key from Embed.ly.  An API Key can be generated [here](https://app.embed.ly).
+### backgroundColor; Type: String (CSS Color Code) (Optional) Default: "#348EDA"
+backgroundColor specifies the color of the mat around the embeded content.
+### textColor; Type: String (CSS Color Code) (Optional) Default: "white"
+textColor specifies the color of the text in the widget.
+### bottomText; Type: String (Optional) Default: "Like This?  Contribute A Donation With Coinbase!"
+bottomText specifies the content that is written below the embeded content and above the box where donation amounts are entered.
