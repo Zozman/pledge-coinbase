@@ -31,9 +31,19 @@ To use Pledge, first put the following into the header of your HTML file:
 <!-- Loading Flat UI -->
 <link href="lib/flatUI/css/flat-ui.css" rel="stylesheet">
 ```
-
-
-
+In the body, Pledge only requires a div tag with a name jQuery can use:
+```
+<div id="pledge"></div>
+```
+Then, place the following into your $(document).ready:
+```
+$(document).ready(function () {
+				$("#pledge").pledge( { sourceAddress: "urlOfContent",
+										coinbaseKey: "CoibaseKeyGoesHere",
+										coinbaseSecret: "CoinbaseSecretGoesHere",
+										embedlyKey: "EmbedlyKeyGoesHere" } );
+			});
+```
 
 
 
