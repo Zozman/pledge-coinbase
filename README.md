@@ -82,6 +82,7 @@ $("#pledge").pledge( { sourceAddress: "http://vimeo.com/86739131",
 					   marginPercentage: 0} );
 ```
 ![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/alternatePlugin.png)
+## Parameters
 ### sourceAddress; Type: String (Optional) Default: null
 sourceAddress contains the address of the URL which needs to be displayed as an embeded object.  If no URL is given, the plugin will just create a pledge box with no content.
 ![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/boxOnly.png)
@@ -109,4 +110,15 @@ If set to true, .pledge() call will attempt to update an existing widget rather 
 ```javascript
 $("#pledge").pledge( { update: true, backgroundColor: "#DC143C" } );
 ```
-
+## Commands
+Pledge has commands that can be run by sending a string rather than an array of parameters as input.
+### Clear
+Clear converts the widget back to an empty div tag.
+```javascript
+$('#pledge').pledge("clear");
+```
+### Destroy
+Destroy removes the widget and the div tag that it was created from the DOM.
+```javascript
+$('#pledge').pledge("destroy");
+```
