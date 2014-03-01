@@ -45,6 +45,5 @@ $(document).ready(function () {
 			});
 ```
 And the user will get something like this:
-
-
+![](//screenshots/defaultPlugin.png)
 
