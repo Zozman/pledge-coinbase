@@ -54,9 +54,9 @@ $(document).ready(function () {
 			});
 ```
 And the user will get something like this:
-![](//screenshots/defaultPlugin.png)
+![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPlugin.png)
 They can then type in a BTC amount and click "Submit" to reach a Coinbase interface to send a donation:
-![](//screenshots/defaultPayment.png)
+![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPayment.png)
 ## Customization
 Pledge can be customized with additional parameters to suit the widget to your needs
 ### Example
@@ -72,6 +72,6 @@ Pledge can be customized with additional parameters to suit the widget to your n
 										currencyType: "USD",
 										marginPercentage: 0} );
 ```
-![](//screenshots/alternatePlugin.png)
+![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/alternatePlugin.png)
 ### sourceAddress: Type-String (Optional) 
 sourceAddress contains the address of the URL which needs to be displayed as an embeded object.  If no URL is given, the plugin will just create a pledge box with no content.
