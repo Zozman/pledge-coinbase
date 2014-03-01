@@ -1,8 +1,8 @@
 Pledge for Coinbase
 ===============
 
-Pledge is a jQuery plugin dedicated to making media people create:
-1. Simple to Embed
+Pledge is a jQuery plugin dedicated to making media people create:<br />
+1. Simple to Embed<br />
 2. Simple for Others To Support
 
 [Made for BitHack 2014](http://bithackathon.com/)
