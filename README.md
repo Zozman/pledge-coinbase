@@ -26,7 +26,7 @@ Pledge uses the following:
 
 ## Usage
 To use Pledge, first put the following into the header of your HTML file:
-```
+```html
 <!-- Loading jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <!-- Loading Embed.ly -->
@@ -41,11 +41,11 @@ To use Pledge, first put the following into the header of your HTML file:
 <link href="lib/flatUI/css/flat-ui.css" rel="stylesheet">
 ```
 In the body, Pledge only requires a div tag with a name jQuery can use:
-```
+```html
 <div id="pledge"></div>
 ```
 Then, place the following into your $(document).ready:
-```
+```javascript
 $(document).ready(function () {
 				$("#pledge").pledge( { sourceAddress: "urlOfContent",
 										coinbaseKey: "CoibaseKeyGoesHere",
@@ -60,7 +60,7 @@ They can then type in a BTC amount and click "Submit" to reach a Coinbase interf
 ## Customization
 Pledge can be customized with additional parameters to suit the widget to your needs
 ### Example
-```
+```javascript
 $("#pledge").pledge( { sourceAddress: "http://vimeo.com/86739131",
 					   coinbaseKey: "keyHere",
 					   coinbaseSecret: "secretHere",
@@ -88,3 +88,7 @@ backgroundColor specifies the color of the mat around the embeded content.
 textColor specifies the color of the text in the widget.
 ### bottomText; Type: String (Optional) Default: "Like This?  Contribute A Donation With Coinbase!"
 bottomText specifies the content that is written below the embeded content and above the box where donation amounts are entered.
+### topText; Type: String (Optional) Default: null
+topText specifies text written above the embeded content.
+### currencyType; Type: String (ISO 4217 Currency Code) (Required) Default: "BTC"
+currenctType specifies what type of currency donations are asked for in the donation box.  Any ISO 4217 Currency Code accepted by Coinbase can be used.  If BTC is not used, then the donation button will convert the monetary value to the proper BTC amount to let the user know how much to send.
