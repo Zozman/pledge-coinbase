@@ -2,8 +2,10 @@ Pledge for Coinbase
 ===============
 
 Pledge is a jQuery plugin dedicated to making media people create:
-  A) Simple to Embed
-  B) Simple for Others To Support
+1. Simple to Embed
+2. Simple for Others To Support
+
+[Made for BitHack 2014](http://bithackathon.com/)
   
 In layman's terms, pledge allows you to turn a single div tag into an embeded widget to display and support a piece of work.
 ## Features
