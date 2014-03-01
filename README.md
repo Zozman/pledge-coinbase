@@ -55,7 +55,7 @@ Pledge uses the following:
 
 ## Compatibility
 Pledge has been tested and has shown to work on the following browsers:
-- Internet Explorer 10
+- Internet Explorer 11
 - Firefox
 - Google Chrome
 - Opera
