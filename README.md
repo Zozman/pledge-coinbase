@@ -42,7 +42,7 @@ In layman's terms, pledge allows you to turn a single div tag into an embeded wi
 - Customizable to suit your needs
 
 ## Demo
-Demo can be found [here](http://zozman.com/pledgeDemo).
+Demo can be found [here](http://zozman.com/pledge).
 
 ## Requirements
 Pledge uses the following:
