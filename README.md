@@ -44,6 +44,7 @@ $(document).ready(function () {
 										embedlyKey: "EmbedlyKeyGoesHere" } );
 			});
 ```
+And the user will get something like this:
 
 
 
