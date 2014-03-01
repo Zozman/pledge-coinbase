@@ -26,6 +26,7 @@ In layman's terms, pledge allows you to turn a single div tag into an embeded wi
  - [currencyType](https://github.com/Zozman/pledge-coinbase#currencytype-type-string-iso-4217-currency-code-required-default-btc)
  - [marginPercentage](https://github.com/Zozman/pledge-coinbase#marginpercentage-type-integer-css-valid-number-optional-default-15)
  - [update](https://github.com/Zozman/pledge-coinbase#update-type-boolean-optional-default-false)
+- [HTML5 Data Tags](https://github.com/Zozman/pledge-coinbase#html5-data-tags)
 - [Commands](https://github.com/Zozman/pledge-coinbase#commands)
  - [Clear](https://github.com/Zozman/pledge-coinbase#clear)
  - [Destroy](https://github.com/Zozman/pledge-coinbase#destroy)
