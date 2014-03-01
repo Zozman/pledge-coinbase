@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Pledge For Coinbase by Zozman</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Pledge For Coinbase</h1>
+        <h2>A jQuery plugin used for embedding content into webpages and adding Coinbase donation boxes easily.  Uses the Coinbase and Embed.ly APIs.</h2>
+        <a href="https://github.com/Zozman/pledge-coinbase" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="pledge-for-coinbase" class="anchor" href="#pledge-for-coinbase"><span class="octicon octicon-link"></span></a>Pledge for Coinbase</h1>
+
+<p>Pledge is a jQuery plugin dedicated to making media people create:<br><br>
+1. Simple to Embed<br>
+2. Simple for Others To Support</p>
+
+<p><a href="http://bithackathon.com/">Made for BitHack 2014</a></p>
+
+<p>In layman's terms, pledge allows you to turn a single div tag into an embeded widget to display and support a piece of work.</p>
+
+<ul>
+<li><a href="https://github.com/Zozman/pledge-coinbase#features">Features</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#requirements">Requirements</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#compatibility">Compatibility</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#usage">Usage</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#customization">Customization</a></li>
+<li>
+<a href="https://github.com/Zozman/pledge-coinbase#parameters">Parameters</a>
+
+<ul>
+<li><a href="https://github.com/Zozman/pledge-coinbase#sourceaddress-type-string-optional-default-null">sourceAddress</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#coinbasekey-type-string-required-default-null">coinbaseKey</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#coinbasesecret-type-string-required-default-null">coinbaseSecret</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#embedlykey-type-string-required-default-null">embedlyKey</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#backgroundcolor-type-string-css-color-code-optional-default-348eda">backgroundColor</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#textcolor-type-string-css-color-code-optional-default-white">textColor</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#bottomtext-type-string-optional-default-like-this--contribute-a-donation-with-coinbase">bottomText</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#toptext-type-string-optional-default-null">topText</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#currencytype-type-string-iso-4217-currency-code-required-default-btc">currencyType</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#marginpercentage-type-integer-css-valid-number-optional-default-15">marginPercentage</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#update-type-boolean-optional-default-false">update</a></li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/Zozman/pledge-coinbase#commands">Commands</a>
+
+<ul>
+<li><a href="https://github.com/Zozman/pledge-coinbase#clear">Clear</a></li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#destroy">Destroy</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#about">About</a></li>
+</ul><h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Uses Coinbase to allow easy and secure donations to a Coinbase account</li>
+<li>Uses Embed.ly to display almost any kind of media <a href="http://embed.ly/embed/features/providers">(Over 250+ As Of Now)</a> without having to figure out how to embed it</li>
+<li>Works off of jQuery and PHP; no need for fance server libraries</li>
+<li>Uses Responsive Design to adapt to whatever screen it is on</li>
+<li>Usable on Tablet and Mobile Devices (Note: Media May Be Unavailable If Media Provider Does Not Support Mobile)</li>
+<li>Customizable to suit your needs</li>
+</ul><h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>Pledge uses the following:</p>
+
+<ul>
+<li><a href="https://github.com/jquery/jquery">jQuery</a></li>
+<li><a href="http://designmodo.github.io/Flat-UI/">FlatUI</a></li>
+<li>
+<a href="https://github.com/twbs/bootstrap">Twitter Bootstrap</a> (Included with FlatUI)</li>
+<li>
+<a href="https://github.com/coinbase/coinbase-php">Coinbase API and PHP Library</a> (Requires API Key With "Buttons" Privledge)</li>
+<li>
+<a href="https://github.com/embedly/embedly-jquery">Embed.ly API and jQuery Library</a> (Requires API Key)</li>
+</ul><h2>
+<a name="compatibility" class="anchor" href="#compatibility"><span class="octicon octicon-link"></span></a>Compatibility</h2>
+
+<p>Pledge has been tested and has shown to work on the following browsers:</p>
+
+<ul>
+<li>Internet Explorer 10</li>
+<li>Firefox</li>
+<li>Google Chrome</li>
+<li>Opera</li>
+<li>Safari</li>
+<li>Mobile Safari For iOS (Note: Flash Embeded Media Will Not Show)</li>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>To use Pledge, first put the following into the header of your HTML file:</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Loading jQuery --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="c">&lt;!-- Loading Embed.ly --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="c">&lt;!-- Loading Pledge --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lib/pledge.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="c">&lt;!-- Loading Pledge CSS Sheet --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"lib/pledge.css"</span>  <span class="nt">/&gt;</span>
+<span class="c">&lt;!-- Loading Bootstrap --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"lib/flatUI/bootstrap/css/bootstrap.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- Loading Flat UI --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"lib/flatUI/css/flat-ui.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+</pre></div>
+
+<p>In the body, Pledge only requires a div tag with a name jQuery can use:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"pledge"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>Then, place the following into your $(document).ready:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#pledge"</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span> <span class="p">{</span> <span class="nx">sourceAddress</span><span class="o">:</span> <span class="s2">"urlOfContent"</span><span class="p">,</span>
+                   <span class="nx">coinbaseKey</span><span class="o">:</span> <span class="s2">"CoibaseKeyGoesHere"</span><span class="p">,</span>
+                   <span class="nx">coinbaseSecret</span><span class="o">:</span> <span class="s2">"CoinbaseSecretGoesHere"</span><span class="p">,</span>
+                   <span class="nx">embedlyKey</span><span class="o">:</span> <span class="s2">"EmbedlyKeyGoesHere"</span> <span class="p">}</span> <span class="p">);</span>
+            <span class="p">});</span>
+</pre></div>
+
+<p>And the user will get something like this:
+<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPlugin.png" alt="">
+They can then type in a BTC amount and click "Submit" to reach a Coinbase interface to send a donation:
+<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPayment.png" alt=""></p>
+
+<h2>
+<a name="customization" class="anchor" href="#customization"><span class="octicon octicon-link"></span></a>Customization</h2>
+
+<p>Pledge can be customized with additional parameters to suit the widget to your needs</p>
+
+<h3>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#pledge"</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span> <span class="p">{</span> <span class="nx">sourceAddress</span><span class="o">:</span> <span class="s2">"http://vimeo.com/86739131"</span><span class="p">,</span>
+            <span class="nx">coinbaseKey</span><span class="o">:</span> <span class="s2">"keyHere"</span><span class="p">,</span>
+            <span class="nx">coinbaseSecret</span><span class="o">:</span> <span class="s2">"secretHere"</span><span class="p">,</span>
+            <span class="nx">embedlyKey</span><span class="o">:</span> <span class="s2">"keyHere"</span><span class="p">,</span>
+            <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">"#DC143C"</span><span class="p">,</span>
+            <span class="nx">textColor</span><span class="o">:</span> <span class="s2">"black"</span><span class="p">,</span>
+            <span class="nx">bottomText</span><span class="o">:</span> <span class="s2">"We Need Money To Buy New Cameras!"</span><span class="p">,</span>
+            <span class="nx">topText</span><span class="o">:</span> <span class="s2">"HEY!!!"</span><span class="p">,</span>
+            <span class="nx">currencyType</span><span class="o">:</span> <span class="s2">"USD"</span><span class="p">,</span>
+            <span class="nx">marginPercentage</span><span class="o">:</span> <span class="mi">0</span><span class="p">}</span> <span class="p">);</span>
+</pre></div>
+
+<p><img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/alternatePlugin.png" alt=""></p>
+
+<h2>
+<a name="parameters" class="anchor" href="#parameters"><span class="octicon octicon-link"></span></a>Parameters</h2>
+
+<h3>
+<a name="sourceaddress-type-string-optional-default-null" class="anchor" href="#sourceaddress-type-string-optional-default-null"><span class="octicon octicon-link"></span></a>sourceAddress; Type: String (Optional) Default: null</h3>
+
+<p>sourceAddress contains the address of the URL which needs to be displayed as an embeded object.  If no URL is given, the plugin will just create a pledge box with no content.
+<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/boxOnly.png" alt=""></p>
+
+<h3>
+<a name="coinbasekey-type-string-required-default-null" class="anchor" href="#coinbasekey-type-string-required-default-null"><span class="octicon octicon-link"></span></a>coinbaseKey; Type: String (Required) Default: null</h3>
+
+<p>coinbaseKey contains the API key from the Coinbase Account that is receiving the donations.  An API Key can be generated <a href="https://coinbase.com/account/api">here</a>, and only needs "Buttons" access.<br><strong>NOTE!  Giving API access other than "Buttons" access is dangerous and not recommended and should be avoided at ALL COSTS.  Giving other access to more powerful API features could give others access to your Coinbase wallet.  BE SMART ABOUT YOUR API ACCESS!</strong></p>
+
+<h3>
+<a name="coinbasesecret-type-string-required-default-null" class="anchor" href="#coinbasesecret-type-string-required-default-null"><span class="octicon octicon-link"></span></a>coinbaseSecret; Type: String (Required) Default: null</h3>
+
+<p>coinbaseSecret contains the API Secret from the Coinbase Account that is receiving the donations.  An API Secret can be generated <a href="https://coinbase.com/account/api">here</a>, and only needs "Buttons" access.<br><strong>NOTE!  Giving API access other than "Buttons" access is dangerous and not recommended and should be avoided at ALL COSTS.  Giving other access to more powerful API features could give others access to your Coinbase wallet.  BE SMART ABOUT YOUR API ACCESS!</strong></p>
+
+<h3>
+<a name="embedlykey-type-string-required-default-null" class="anchor" href="#embedlykey-type-string-required-default-null"><span class="octicon octicon-link"></span></a>embedlyKey; Type: String (Required) Default: null</h3>
+
+<p>embedlyKey contains the API key from Embed.ly.  An API Key can be generated <a href="https://app.embed.ly">here</a>.</p>
+
+<h3>
+<a name="backgroundcolor-type-string-css-color-code-optional-default-348eda" class="anchor" href="#backgroundcolor-type-string-css-color-code-optional-default-348eda"><span class="octicon octicon-link"></span></a>backgroundColor; Type: String (CSS Color Code) (Optional) Default: "#348EDA"</h3>
+
+<p>backgroundColor specifies the color of the mat around the embeded content.</p>
+
+<h3>
+<a name="textcolor-type-string-css-color-code-optional-default-white" class="anchor" href="#textcolor-type-string-css-color-code-optional-default-white"><span class="octicon octicon-link"></span></a>textColor; Type: String (CSS Color Code) (Optional) Default: "white"</h3>
+
+<p>textColor specifies the color of the text in the widget.</p>
+
+<h3>
+<a name="bottomtext-type-string-optional-default-like-this--contribute-a-donation-with-coinbase" class="anchor" href="#bottomtext-type-string-optional-default-like-this--contribute-a-donation-with-coinbase"><span class="octicon octicon-link"></span></a>bottomText; Type: String (Optional) Default: "Like This?  Contribute A Donation With Coinbase!"</h3>
+
+<p>bottomText specifies the content that is written below the embeded content and above the box where donation amounts are entered.</p>
+
+<h3>
+<a name="toptext-type-string-optional-default-null" class="anchor" href="#toptext-type-string-optional-default-null"><span class="octicon octicon-link"></span></a>topText; Type: String (Optional) Default: null</h3>
+
+<p>topText specifies text written above the embeded content.</p>
+
+<h3>
+<a name="currencytype-type-string-iso-4217-currency-code-required-default-btc" class="anchor" href="#currencytype-type-string-iso-4217-currency-code-required-default-btc"><span class="octicon octicon-link"></span></a>currencyType; Type: String (ISO 4217 Currency Code) (Required) Default: "BTC"</h3>
+
+<p>currenctType specifies what type of currency donations are asked for in the donation box.  Any ISO 4217 Currency Code accepted by Coinbase can be used.  If BTC is not used, then the donation button will convert the monetary value to the proper BTC amount to let the user know how much to send.
+<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/usdExample.png" alt=""></p>
+
+<h3>
+<a name="marginpercentage-type-integer-css-valid-number-optional-default-15" class="anchor" href="#marginpercentage-type-integer-css-valid-number-optional-default-15"><span class="octicon octicon-link"></span></a>marginPercentage; Type: Integer (CSS Valid Number) (Optional) Default: 15</h3>
+
+<p>marginPercentage represents the percentage of whitespace used as a margin on each side of the widget.</p>
+
+<h3>
+<a name="update-type-boolean-optional-default-false" class="anchor" href="#update-type-boolean-optional-default-false"><span class="octicon octicon-link"></span></a>update; Type: Boolean (Optional) Default: false</h3>
+
+<p>If set to true, .pledge() call will attempt to update an existing widget rather than create a new one.  Instead of using default values for parameters, the widget will attempt to use any newely entered parameters, and then use the previously used ones to reconstruct the widget.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#pledge"</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span> <span class="p">{</span> <span class="nx">update</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">"#DC143C"</span> <span class="p">}</span> <span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="commands" class="anchor" href="#commands"><span class="octicon octicon-link"></span></a>Commands</h2>
+
+<p>Pledge has commands that can be run by sending a string rather than an array of parameters as input.</p>
+
+<h3>
+<a name="clear" class="anchor" href="#clear"><span class="octicon octicon-link"></span></a>Clear</h3>
+
+<p>Clear converts the widget back to an empty div tag.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#pledge'</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span><span class="s2">"clear"</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="destroy" class="anchor" href="#destroy"><span class="octicon octicon-link"></span></a>Destroy</h3>
+
+<p>Destroy removes the widget and the div tag that it was created from the DOM.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#pledge'</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span><span class="s2">"destroy"</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
+
+<p>Plugin developed by <a href="http://mrlovoy.com">Zac Lovoy</a> <a href="http://twitter.com/zwlovoy">@zwlovoy</a>.<br><a href="http://bithackathon.com/">Made for BitHack 2014</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Zozman/pledge-coinbase/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Zozman/pledge-coinbase/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Zozman/pledge-coinbase"></a> is maintained by <a href="https://github.com/Zozman">Zozman</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
