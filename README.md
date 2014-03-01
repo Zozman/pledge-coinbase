@@ -51,6 +51,7 @@ Pledge uses the following:
 - [Twitter Bootstrap](https://github.com/twbs/bootstrap) (Included with FlatUI)
 - [Coinbase API and PHP Library](https://github.com/coinbase/coinbase-php) (Requires API Key With "Buttons" Privledge)
 - [Embed.ly API and jQuery Library](https://github.com/embedly/embedly-jquery) (Requires API Key)
+- PHP Installed on your Server
 
 ## Compatibility
 Pledge has been tested and has shown to work on the following browsers:
