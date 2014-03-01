@@ -56,3 +56,4 @@ $(document).ready(function () {
 And the user will get something like this:
 ![](//screenshots/defaultPlugin.png)
 They can then type in a BTC amount and click "Submit" to reach a Coinbase interface to send a donation:
+![](//screenshots/defaultPayment.png)
