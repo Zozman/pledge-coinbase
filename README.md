@@ -61,16 +61,16 @@ They can then type in a BTC amount and click "Submit" to reach a Coinbase interf
 Pledge can be customized with additional parameters to suit the widget to your needs
 ### Example
 ```
-                $("#pledge").pledge( { sourceAddress: "http://vimeo.com/86739131",
-										coinbaseKey: "2wJYhNbW93QEou0N",
-										coinbaseSecret: "MTYir0xbcXQVYM2z6sczznyx9XFmncfa",
-										embedlyKey: "cb620e553e0143ac9d844ada72d00879",
-										backgroundColor: "#DC143C",
-										textColor: "black",
-										bottomText: "We Need Money To Buy New Cameras!",
-										topText: "HEY!!!",
-										currencyType: "USD",
-										marginPercentage: 0} );
+$("#pledge").pledge( { sourceAddress: "http://vimeo.com/86739131",
+					   coinbaseKey: "keyHere",
+					   coinbaseSecret: "secretHere",
+					   embedlyKey: "keyHere",
+					   backgroundColor: "#DC143C",
+					   textColor: "black",
+					   bottomText: "We Need Money To Buy New Cameras!",
+					   topText: "HEY!!!",
+					   currencyType: "USD",
+					   marginPercentage: 0} );
 ```
 ![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/alternatePlugin.png)
 ### sourceAddress: Type-String (Optional) 
