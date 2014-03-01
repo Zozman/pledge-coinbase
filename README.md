@@ -139,12 +139,12 @@ If set to true, .pledge() call will attempt to update an existing widget rather 
 $("#pledge").pledge( { update: true, backgroundColor: "#DC143C" } );
 ```
 ## HTML5 Data Tags
-All parameters can be set by the use of HTML5 Data Tags instead of setting them in the jQuery call.
-HTML:
+All parameters can be set by the use of HTML5 Data Tags instead of setting them in the jQuery call.  Note that if the same parameter is passed both ways, Data tags will override the JavaScript parameters.
+### HTML
 ```html
 <div id="pledge" data-embedlyKey="keyHere" data-sourceAddress="urlHere" data-coinbaseKey="keyHere" data-coinbaseSecret="secretHere"></div>
 ```
-JavaScript:
+### JavaScript
 ```javascript
 $("#pledge").pledge();
 ```
