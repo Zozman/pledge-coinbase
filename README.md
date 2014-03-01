@@ -104,3 +104,9 @@ currenctType specifies what type of currency donations are asked for in the dona
 ![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/usdExample.png)
 ### marginPercentage; Type: Integer (CSS Valid Number) (Optional) Default: 15
 marginPercentage represents the percentage of whitespace used as a margin on each side of the widget.
+### update; Type: Boolean (Optional) Default: false
+If set to true, .pledge() call will attempt to update an existing widget rather than create a new one.  Instead of using default values for parameters, the widget will attempt to use any newely entered parameters, and then use the previously used ones to reconstruct the widget.
+```javascript
+$("#pledge").pledge( { update: true, backgroundColor: "#DC143C" } );
+```
+
