@@ -133,6 +133,17 @@ If set to true, .pledge() call will attempt to update an existing widget rather 
 ```javascript
 $("#pledge").pledge( { update: true, backgroundColor: "#DC143C" } );
 ```
+## HTML5 Data Tags
+All parameters can be set by the use of HTML5 Data Tags instead of setting them in the jQuery call.
+HTML:
+```html
+<div id="pledge" data-embedlyKey="keyHere" data-sourceAddress="urlHere" data-coinbaseKey="keyHere" data-coinbaseSecret="secretHere"></div>
+```
+JavaScript:
+```javascript
+$("#pledge").pledge();
+```
+
 ## Commands
 Pledge has commands that can be run by sending a string rather than an array of parameters as input.
 ### Clear
