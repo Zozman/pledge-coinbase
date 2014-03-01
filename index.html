@@ -62,6 +62,7 @@
 <li><a href="https://github.com/Zozman/pledge-coinbase#update-type-boolean-optional-default-false">update</a></li>
 </ul>
 </li>
+<li><a href="https://github.com/Zozman/pledge-coinbase#html5-data-tags">HTML5 Data Tags</a></li>
 <li>
 <a href="https://github.com/Zozman/pledge-coinbase#commands">Commands</a>
 
@@ -135,10 +136,10 @@
 
 <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="nx">$</span><span class="p">(</span><span class="s2">"#pledge"</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span> <span class="p">{</span> <span class="nx">sourceAddress</span><span class="o">:</span> <span class="s2">"urlOfContent"</span><span class="p">,</span>
-                   <span class="nx">coinbaseKey</span><span class="o">:</span> <span class="s2">"CoibaseKeyGoesHere"</span><span class="p">,</span>
-                   <span class="nx">coinbaseSecret</span><span class="o">:</span> <span class="s2">"CoinbaseSecretGoesHere"</span><span class="p">,</span>
-                   <span class="nx">embedlyKey</span><span class="o">:</span> <span class="s2">"EmbedlyKeyGoesHere"</span> <span class="p">}</span> <span class="p">);</span>
-            <span class="p">});</span>
+                <span class="nx">coinbaseKey</span><span class="o">:</span> <span class="s2">"CoibaseKeyGoesHere"</span><span class="p">,</span>
+                <span class="nx">coinbaseSecret</span><span class="o">:</span> <span class="s2">"CoinbaseSecretGoesHere"</span><span class="p">,</span>
+                <span class="nx">embedlyKey</span><span class="o">:</span> <span class="s2">"EmbedlyKeyGoesHere"</span> <span class="p">}</span> <span class="p">);</span>
+    <span class="p">});</span>
 </pre></div>
 
 <p>And the user will get something like this:
@@ -229,6 +230,20 @@ They can then type in a BTC amount and click "Submit" to reach a Coinbase interf
 <p>If set to true, .pledge() call will attempt to update an existing widget rather than create a new one.  Instead of using default values for parameters, the widget will attempt to use any newely entered parameters, and then use the previously used ones to reconstruct the widget.</p>
 
 <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#pledge"</span><span class="p">).</span><span class="nx">pledge</span><span class="p">(</span> <span class="p">{</span> <span class="nx">update</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">"#DC143C"</span> <span class="p">}</span> <span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="html5-data-tags" class="anchor" href="#html5-data-tags"><span class="octicon octicon-link"></span></a>HTML5 Data Tags</h2>
+
+<p>All parameters can be set by the use of HTML5 Data Tags instead of setting them in the jQuery call.
+HTML:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"pledge"</span> <span class="na">data-embedlyKey=</span><span class="s">"keyHere"</span> <span class="na">data-sourceAddress=</span><span class="s">"urlHere"</span> <span class="na">data-coinbaseKey=</span><span class="s">"keyHere"</span> <span class="na">data-coinbaseSecret=</span><span class="s">"secretHere"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>JavaScript:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#pledge"</span><span class="p">).</span><span class="nx">pledge</span><span class="p">();</span>
 </pre></div>
 
 <h2>
