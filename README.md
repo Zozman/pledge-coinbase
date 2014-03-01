@@ -122,3 +122,6 @@ Destroy removes the widget and the div tag that it was created from the DOM.
 ```javascript
 $('#pledge').pledge("destroy");
 ```
+## About
+Plugin developed by [Zac Lovoy](http://mrlovoy.com) [@zwlovoy](http://twitter.com/zwlovoy).  
+[Made for BitHack 2014](http://bithackathon.com/)
