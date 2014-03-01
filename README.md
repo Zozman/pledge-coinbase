@@ -10,6 +10,7 @@ Pledge is a jQuery plugin dedicated to making media people create:<br /><br />
 In layman's terms, pledge allows you to turn a single div tag into an embeded widget to display and support a piece of work.
 
 - [Features](https://github.com/Zozman/pledge-coinbase#features)
+- [Demo](https://github.com/Zozman/pledge-coinbase#demo)
 - [Requirements](https://github.com/Zozman/pledge-coinbase#requirements)
 - [Compatibility](https://github.com/Zozman/pledge-coinbase#compatibility)
 - [Usage](https://github.com/Zozman/pledge-coinbase#usage)
@@ -39,6 +40,9 @@ In layman's terms, pledge allows you to turn a single div tag into an embeded wi
 - Uses Responsive Design to adapt to whatever screen it is on
 - Usable on Tablet and Mobile Devices (Note: Media May Be Unavailable If Media Provider Does Not Support Mobile)
 - Customizable to suit your needs
+
+## Demo
+Demo can be found [here](http://zozman.com/pledgeDemo).
 
 ## Requirements
 Pledge uses the following:
