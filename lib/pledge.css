@@ -1,0 +1,96 @@
+/*
+ * pledge.css
+ * 
+ * CSS Sheet for Pledge jQuery plugin
+ * 
+ * By Zac Lovoy        zwlovoy@gmail.com
+ */
+.pledge {
+	min-height: 400px;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	color: white;
+}
+
+.pledge a {
+	color: #DC143C;
+}
+
+.embed a:after {
+	content:" ";
+}
+
+.pledgeTop {
+	margin-top: 8%;
+	min-height: 50px;
+	text-align:center;
+}
+
+#pledgeLogin {
+	margin-left:auto;
+	margin-right:auto;
+	display: inline;
+	text-align:center;
+}
+
+#pledgeLoginText {
+	text-align:center;
+}
+
+#pledgeBox {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.pledgeHidden {
+	display: none;
+}
+
+#pledgeCancelButton {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.embed {
+	text-align:center;
+}
+
+.description {
+}
+
+.description:after {
+	content:": Media Not Supported By Browser";
+}
+
+.responsive-object {
+  position: relative;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.responsive-object iframe,
+.responsive-object object,
+.responsive-object embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (orientation: portrait) {
+  img.embedImage { max-width: 100%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.embedImage { max-height: 100%; }
+}
+
+.embedImage {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -4,14 +4,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Pledge For Coinbase by Zozman</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
+	
+	<!-- Loading jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Loading Embed.ly -->
+	<script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
+	<!-- Loading Pledge -->
+	<script src="lib/pledge.js"></script>
+	<!-- Loading Pledge CSS Sheet -->
+	<link rel="stylesheet" type="text/css" href="lib/pledge.css"  />
+	<!-- Loading Bootstrap -->
+    <link href="lib/flatUI/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="lib/flatUI/css/flat-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+			$(document).ready(function () {
+				$("#pledge2").pledge( { sourceAddress: "https://www.youtube.com/watch?v=O7wOTNCdRR4",
+										coinbaseKey: "2wJYhNbW93QEou0N",
+										coinbaseSecret: "MTYir0xbcXQVYM2z6sczznyx9XFmncfa",
+										embedlyKey: "cb620e553e0143ac9d844ada72d00879" } );
+				
+				$("#pledge").pledge( { sourceAddress: "http://www.twitch.tv/bigzoz",
+										coinbaseKey: "2wJYhNbW93QEou0N",
+										coinbaseSecret: "MTYir0xbcXQVYM2z6sczznyx9XFmncfa",
+										embedlyKey: "cb620e553e0143ac9d844ada72d00879" } );
+										
+				$("#pledge3").pledge( { sourceAddress: "http://vimeo.com/86739131",
+										coinbaseKey: "2wJYhNbW93QEou0N",
+										coinbaseSecret: "MTYir0xbcXQVYM2z6sczznyx9XFmncfa",
+										embedlyKey: "cb620e553e0143ac9d844ada72d00879",
+										backgroundColor: "#DC143C",
+										textColor: "black",
+										bottomText: "We Need Money To Buy New Cameras!",
+										topText: "HEY!!!",
+										currencyType: "USD",
+										marginPercentage: 0} );
+
+			});
+		</script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,11 +76,12 @@
 
 <p><a href="http://bithackathon.com/">Made for BitHack 2014</a></p>
 
-<p>In layman's terms, pledge allows you to turn a single div tag into an embeded widget to display media and generate a Coinbase donation box attached to it in a visual pleasing and easy to use format.</p>
+<div id="pledge2"></div><br />
+
+<p>In layman's terms, Pledge allows you to turn a single div tag into an embeded widget to display media and generate a Coinbase donation box attached to it in a visual pleasing and easy to use format.</p>
 
 <ul>
 <li><a href="https://github.com/Zozman/pledge-coinbase#features">Features</a></li>
-<li><a href="https://github.com/Zozman/pledge-coinbase#demo">Demo</a></li>
 <li><a href="https://github.com/Zozman/pledge-coinbase#requirements">Requirements</a></li>
 <li><a href="https://github.com/Zozman/pledge-coinbase#compatibility">Compatibility</a></li>
 <li><a href="https://github.com/Zozman/pledge-coinbase#usage">Usage</a></li>
@@ -85,10 +123,7 @@
 <li>Uses Responsive Design to adapt to whatever screen it is on</li>
 <li>Usable on Tablet and Mobile Devices (Note: Media May Be Unavailable If Media Provider Does Not Support Mobile)</li>
 <li>Customizable to suit your needs</li>
-</ul><h2>
-<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
-
-<p>Demo can be found <a href="http://zozman.com/pledgeDemo">here</a>.</p>
+</ul>
 
 <h2>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
@@ -151,9 +186,10 @@
 </pre></div>
 
 <p>And the user will get something like this:
-<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPlugin.png" alt="">
-They can then type in a BTC amount and click "Submit" to reach a Coinbase interface to send a donation:
-<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPayment.png" alt=""></p>
+	
+<div id="pledge"></div>	<br />
+	
+They can then type in a BTC amount and click "Submit" to reach a Coinbase interface to send a donation.
 
 <h2>
 <a name="customization" class="anchor" href="#customization"><span class="octicon octicon-link"></span></a>Customization</h2>
@@ -175,7 +211,7 @@ They can then type in a BTC amount and click "Submit" to reach a Coinbase interf
             <span class="nx">marginPercentage</span><span class="o">:</span> <span class="mi">0</span><span class="p">}</span> <span class="p">);</span>
 </pre></div>
 
-<p><img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/alternatePlugin.png" alt=""></p>
+<div id="pledge3"></div>
 
 <h2>
 <a name="parameters" class="anchor" href="#parameters"><span class="octicon octicon-link"></span></a>Parameters</h2>
@@ -184,7 +220,8 @@ They can then type in a BTC amount and click "Submit" to reach a Coinbase interf
 <a name="sourceaddress-type-string-optional-default-null" class="anchor" href="#sourceaddress-type-string-optional-default-null"><span class="octicon octicon-link"></span></a>sourceAddress; Type: String (Optional) Default: null</h3>
 
 <p>sourceAddress contains the address of the URL which needs to be displayed as an embeded object.  If no URL is given, the plugin will just create a pledge box with no content.
-<img src="https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/boxOnly.png" alt=""></p>
+
+<div id="pledge6"></div>
 
 <h3>
 <a name="coinbasekey-type-string-required-default-null" class="anchor" href="#coinbasekey-type-string-required-default-null"><span class="octicon octicon-link"></span></a>coinbaseKey; Type: String (Required) Default: null</h3>
