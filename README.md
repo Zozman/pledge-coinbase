@@ -24,6 +24,15 @@ Pledge uses the following:
 - [Coinbase API and PHP Library](https://github.com/coinbase/coinbase-php) (Requires API Key With "Buttons" Privledge)
 - [Embed.ly API and jQuery Library](https://github.com/embedly/embedly-jquery) (Requires API Key)
 
+## Compatibility
+Pledge has been tested and has shown to work on the following browsers:
+- Internet Explorer 10
+- Firefox
+- Google Chrome
+- Opera
+- Safari
+- Mobile Safari For iOS (Note: Flash Embeded Media Will Not Show)
+
 ## Usage
 To use Pledge, first put the following into the header of your HTML file:
 ```html
@@ -92,3 +101,6 @@ bottomText specifies the content that is written below the embeded content and a
 topText specifies text written above the embeded content.
 ### currencyType; Type: String (ISO 4217 Currency Code) (Required) Default: "BTC"
 currenctType specifies what type of currency donations are asked for in the donation box.  Any ISO 4217 Currency Code accepted by Coinbase can be used.  If BTC is not used, then the donation button will convert the monetary value to the proper BTC amount to let the user know how much to send.
+![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/usdExample.png)
+### marginPercentage; Type: Integer (CSS Valid Number) (Optional) Default: 15
+marginPercentage represents the percentage of whitespace used as a margin on each side of the widget.
