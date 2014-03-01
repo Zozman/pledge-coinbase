@@ -73,5 +73,10 @@ $("#pledge").pledge( { sourceAddress: "http://vimeo.com/86739131",
 					   marginPercentage: 0} );
 ```
 ![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/alternatePlugin.png)
-### sourceAddress: Type-String (Optional) 
+### sourceAddress; Type: String (Optional) Default: null
 sourceAddress contains the address of the URL which needs to be displayed as an embeded object.  If no URL is given, the plugin will just create a pledge box with no content.
+![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/boxOnly.png)
+### coinbaseKey; Type: String (Required) Default: null
+coinbaseKey contains the API key from the Coinbase Account that is receiving the donations.  An API Key can be generated [here](https://coinbase.com/account/api), and only needs "Buttons" access.<br />  ****NOTE!  Giving API access other than "Buttons" access is dangerous and not recommended and should be avoided at ALL COSTS.  Giving other access to more powerful API features could give others access to your Coinbase wallet.  BE SMART ABOUT YOUR API ACCESS!****
+### coinbaseSecret; Type: String (Required) Default: null
+coinbaseSecret contains the API Secret from the Coinbase Account that is receiving the donations.  An API Secret can be generated [here](https://coinbase.com/account/api), and only needs "Buttons" access.<br />  ****NOTE!  Giving API access other than "Buttons" access is dangerous and not recommended and should be avoided at ALL COSTS.  Giving other access to more powerful API features could give others access to your Coinbase wallet.  BE SMART ABOUT YOUR API ACCESS!****
