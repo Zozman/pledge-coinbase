@@ -59,5 +59,19 @@ They can then type in a BTC amount and click "Submit" to reach a Coinbase interf
 ![](//screenshots/defaultPayment.png)
 ## Customization
 Pledge can be customized with additional parameters to suit the widget to your needs
-### sourceAddress: Type-String (optional) 
+### Example
+```
+                $("#pledge").pledge( { sourceAddress: "http://vimeo.com/86739131",
+										coinbaseKey: "2wJYhNbW93QEou0N",
+										coinbaseSecret: "MTYir0xbcXQVYM2z6sczznyx9XFmncfa",
+										embedlyKey: "cb620e553e0143ac9d844ada72d00879",
+										backgroundColor: "#DC143C",
+										textColor: "black",
+										bottomText: "We Need Money To Buy New Cameras!",
+										topText: "HEY!!!",
+										currencyType: "USD",
+										marginPercentage: 0} );
+```
+![](//screenshots/alternatePlugin.png)
+### sourceAddress: Type-String (Optional) 
 sourceAddress contains the address of the URL which needs to be displayed as an embeded object.  If no URL is given, the plugin will just create a pledge box with no content.
