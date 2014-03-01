@@ -14,8 +14,6 @@ In layman's terms, pledge allows you to turn a single div tag into an embeded wi
 - Usable on Tablet and Mobile Devices (Note: Media May Be Unavailable If Media Provider Does Not Support Mobile)
 - Customizable to suit your needs
 
-
-
 ## Requirements
 Pledge uses the following:
 - [jQuery](https://github.com/jquery/jquery)
