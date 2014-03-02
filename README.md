@@ -66,11 +66,11 @@ Pledge has been tested and has shown to work on the following browsers:
 To use Pledge, first put the following into the header of your HTML file:
 ```html
 <!-- Loading jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Loading Embed.ly -->
 <script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
 <!-- Loading Pledge -->
-<script src="lib/pledge.js"></script>
+<script src="lib/pledge.min.js"></script>
 <!-- Loading Pledge CSS Sheet -->
 <link rel="stylesheet" type="text/css" href="lib/pledge.css"  />
 <!-- Loading Bootstrap -->
@@ -85,11 +85,11 @@ In the body, Pledge only requires a div tag with a name jQuery can use:
 Then, place the following into your $(document).ready:
 ```javascript
 $(document).ready(function () {
-				$("#pledge").pledge( { sourceAddress: "urlOfContent",
-										coinbaseKey: "CoibaseKeyGoesHere",
-										coinbaseSecret: "CoinbaseSecretGoesHere",
-										embedlyKey: "EmbedlyKeyGoesHere" } );
-			});
+		$("#pledge").pledge( { sourceAddress: "urlOfContent",
+								coinbaseKey: "CoibaseKeyGoesHere",
+								coinbaseSecret: "CoinbaseSecretGoesHere",
+								embedlyKey: "EmbedlyKeyGoesHere" } );
+		});
 ```
 And the user will get something like this:
 ![](https://raw.github.com/Zozman/pledge-coinbase/master/screenshots/defaultPlugin.png)
