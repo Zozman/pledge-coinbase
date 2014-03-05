@@ -165,3 +165,5 @@ $('#pledge').pledge("destroy");
 ## About
 Plugin developed by [Zac Lovoy](http://mrlovoy.com) [@zwlovoy](http://twitter.com/zwlovoy).  
 [Made for BitHack 2014](http://bithackathon.com/)
+
+Bitcoin Address: [19d72ob2bgyERMctmdtSzDkfijES12uxwh](bitcoin:19d72ob2bgyERMctmdtSzDkfijES12uxwh)
