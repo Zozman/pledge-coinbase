@@ -36,7 +36,7 @@ In layman's terms, pledge allows you to turn a single div tag into an embeded wi
 ## Features
 - Uses Coinbase to allow easy and secure donations to a Coinbase account
 - Uses Embed.ly to display almost any kind of media [(Over 250+ As Of Now)](http://embed.ly/embed/features/providers) without having to figure out how to embed it
-- Works off of jQuery and PHP; no need for fance server libraries
+- Works off of jQuery and PHP; no need for fancy server libraries
 - Uses Responsive Design to adapt to whatever screen it is on
 - Usable on Tablet and Mobile Devices (Note: Media May Be Unavailable If Media Provider Does Not Support Mobile)
 - Customizable to suit your needs
