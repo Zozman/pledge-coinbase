@@ -1,0 +1,39 @@
+{
+    "name": "pledge",
+    "title": "Pledge For Coinbase",
+    "description": "Pledge allows you to turn a single div tag into an embeded widget to display media and generate a Coinbase donation box attached to it in a visual pleasing and easy to use format.",
+    "keywords": [
+        "coinbase",
+        "pledge",
+        "donations"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Zac Lovoy",
+        "url": "http://zaclovoy.com"
+    },
+    "maintainers": [
+        {
+            "name": "Zac Lovoy",
+            "email": "zwlovoy@gmail.com",
+            "url": "http://zaclovoy.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/Zozman/pledge-coinbase/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/Zozman/pledge-coinbase/issues",
+    "homepage": "http://zozman.com/pledge/",
+    "docs": "http://zozman.com/pledge/",
+    "demo": "http://zozman.com/pledge/",
+    "download": "https://github.com/Zozman/pledge-coinbase",
+    "dependencies": {
+        "jquery": ">=1.11",
+        "PHP On Server" : "*",
+        "Embed.ly API Key" : "*",
+        "Coinbase Account And API Key" : "*"
+    }
+}
